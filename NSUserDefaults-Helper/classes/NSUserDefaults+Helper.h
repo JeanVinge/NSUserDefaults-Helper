@@ -8,6 +8,26 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSUserDefaults (NSUserDefaults_Helper)
+/**
+ *  Essa Category é um helper para salvar objetos em um NSUserDefaults
+ */
+@interface NSUserDefaults (Helper)
+
+/**
+ *  Este metodo salva um objeto qualquer no NSUserDefaults
+ *
+ *  @param object o parametro object recebe um NSObject qualquer
+ *  @param key    define a chave onde sera salvo o objeto
+ */
++ (void)saveCustomObject:(NSObject *)object key:(NSString *)key;
+
+/**
+ *  Este metodo recupera o objeto gravado no NSUserDefaults
+ *
+ *  @param key o parametro key recebe a chave em que foi salvo o objeto
+ *
+ *  @return retorna o objeto salvo
+ */
++ (NSObject *)loadCustomObjectWithKey:(NSString *)key;
 
 @end

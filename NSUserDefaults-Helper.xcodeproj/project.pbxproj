@@ -15,6 +15,7 @@
 		397754D01BC43BE200F8EF53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397754CE1BC43BE200F8EF53 /* LaunchScreen.storyboard */; };
 		397754DB1BC43BE200F8EF53 /* NSUserDefaults_HelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 397754DA1BC43BE200F8EF53 /* NSUserDefaults_HelperTests.m */; };
 		397754E61BC43BE200F8EF53 /* NSUserDefaults_HelperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 397754E51BC43BE200F8EF53 /* NSUserDefaults_HelperUITests.m */; };
+		397754F61BC43C6000F8EF53 /* NSUserDefaults+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 397754F51BC43C6000F8EF53 /* NSUserDefaults+Helper.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		397754E11BC43BE200F8EF53 /* NSUserDefaults-HelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSUserDefaults-HelperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		397754E51BC43BE200F8EF53 /* NSUserDefaults_HelperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaults_HelperUITests.m; sourceTree = "<group>"; };
 		397754E71BC43BE200F8EF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		397754F41BC43C6000F8EF53 /* NSUserDefaults+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Helper.h"; sourceTree = "<group>"; };
+		397754F51BC43C6000F8EF53 /* NSUserDefaults+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Helper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		397754BF1BC43BE200F8EF53 /* NSUserDefaults-Helper */ = {
 			isa = PBXGroup;
 			children = (
+				397754F31BC43C3C00F8EF53 /* Classes */,
 				397754C31BC43BE200F8EF53 /* AppDelegate.h */,
 				397754C41BC43BE200F8EF53 /* AppDelegate.m */,
 				397754C61BC43BE200F8EF53 /* ViewController.h */,
@@ -138,6 +142,16 @@
 				397754E71BC43BE200F8EF53 /* Info.plist */,
 			);
 			path = "NSUserDefaults-HelperUITests";
+			sourceTree = "<group>";
+		};
+		397754F31BC43C3C00F8EF53 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				397754F41BC43C6000F8EF53 /* NSUserDefaults+Helper.h */,
+				397754F51BC43C6000F8EF53 /* NSUserDefaults+Helper.m */,
+			);
+			name = Classes;
+			path = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +287,7 @@
 				397754C81BC43BE200F8EF53 /* ViewController.m in Sources */,
 				397754C51BC43BE200F8EF53 /* AppDelegate.m in Sources */,
 				397754C21BC43BE200F8EF53 /* main.m in Sources */,
+				397754F61BC43C6000F8EF53 /* NSUserDefaults+Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +513,7 @@
 				397754EC1BC43BE200F8EF53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		397754ED1BC43BE200F8EF53 /* Build configuration list for PBXNativeTarget "NSUserDefaults-HelperTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +522,7 @@
 				397754EF1BC43BE200F8EF53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		397754F01BC43BE200F8EF53 /* Build configuration list for PBXNativeTarget "NSUserDefaults-HelperUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +531,7 @@
 				397754F21BC43BE200F8EF53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

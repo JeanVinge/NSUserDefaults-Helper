@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSUserDefaults+Helper.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [NSUserDefaults saveCustomObject:@"batata" key:@"batata"];
+    
+    NSLog(@"%@", (NSString *)[NSUserDefaults loadCustomObjectWithKey:@"batata"]);
 }
 
 - (void)didReceiveMemoryWarning {
