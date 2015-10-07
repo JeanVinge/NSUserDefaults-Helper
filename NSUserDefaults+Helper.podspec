@@ -9,12 +9,10 @@
 Pod::Spec.new do |s|
   s.name             = "NSUserDefaults+Helper"
   s.version          = "1.0.0"
-  s.summary          = "The idea is to create a similar Apple Store Banner, and learn some code in **swift** =)"
+  s.summary          = "Helper store custom objects in NSUserDefaults"
 
   s.description      = <<-DESC
-                        The implementation is in progress,
-                        if you liked the idea, and want to help me and keep improve this code,
-                        you can make a pull request or talk on [@jean_vinge](https://twitter.com/jean_vinge).
+                            Helper store custom objects in NSUserDefaults with one line of code.
                        DESC
 
   s.homepage         = "https://github.com/JeanVinge/NSUserDefaults-Helper"
