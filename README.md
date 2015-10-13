@@ -1,6 +1,6 @@
 # Get Started
 
-This pod helps to store and load easily custom objects with ** NSUserDefaults **
+This pod helps to store and load easily custom objects with **NSUserDefaults**
 
 ## PodFile
 
