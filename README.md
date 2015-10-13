@@ -14,12 +14,12 @@ pod "NSUserDefaults+Helper"
 Store in NSUserDefaults
 
 ```objective-c
-    NSString *string = @"test";
-    [NSUserDefaults saveCustomObject:string key:@"example"];
+NSString *string = @"test";
+[NSUserDefaults saveCustomObject:string key:@"example"];
 ```
 
 Load from NSUserDefaults
 
 ```objective-c
-    NSString *stringLoaded = (NSString *)[NSUserDefaults loadCustomObjectWithKey:@"example"];
+NSString *stringLoaded = (NSString *)[NSUserDefaults loadCustomObjectWithKey:@"example"];
 ```
